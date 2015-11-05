@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D050039C1BEB2DC300634264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D050039B1BEB2DC300634264 /* AppDelegate.swift */; };
+		D05003A11BEB2DC300634264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D050039F1BEB2DC300634264 /* Main.storyboard */; };
+		D05003A31BEB2DC300634264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05003A21BEB2DC300634264 /* Assets.xcassets */; };
+		D05003A61BEB2DC300634264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05003A41BEB2DC300634264 /* LaunchScreen.storyboard */; };
+		D05003B11BEB2DC300634264 /* ToppanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05003B01BEB2DC300634264 /* ToppanoTests.swift */; };
+		D05003BC1BEB2DC300634264 /* ToppanoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05003BB1BEB2DC300634264 /* ToppanoUITests.swift */; };
+		D05003D91BEB447900634264 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05003D71BEB447900634264 /* MainViewController.swift */; };
+		D05003DA1BEB447900634264 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05003D81BEB447900634264 /* MainViewController.xib */; };
+		D05003DD1BEB459B00634264 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05003DB1BEB459B00634264 /* HomeViewController.swift */; };
+		D05003DE1BEB459B00634264 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05003DC1BEB459B00634264 /* HomeViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D05003AD1BEB2DC300634264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D05003901BEB2DC300634264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D05003971BEB2DC300634264;
+			remoteInfo = Toppano;
+		};
+		D05003B81BEB2DC300634264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D05003901BEB2DC300634264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D05003971BEB2DC300634264;
+			remoteInfo = Toppano;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D05003981BEB2DC300634264 /* Toppano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toppano.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D050039B1BEB2DC300634264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D05003A01BEB2DC300634264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D05003A21BEB2DC300634264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D05003A51BEB2DC300634264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D05003A71BEB2DC300634264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D05003AC1BEB2DC300634264 /* ToppanoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToppanoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D05003B01BEB2DC300634264 /* ToppanoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppanoTests.swift; sourceTree = "<group>"; };
+		D05003B21BEB2DC300634264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D05003B71BEB2DC300634264 /* ToppanoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToppanoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D05003BB1BEB2DC300634264 /* ToppanoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppanoUITests.swift; sourceTree = "<group>"; };
+		D05003BD1BEB2DC400634264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D05003D71BEB447900634264 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D05003D81BEB447900634264 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		D05003DB1BEB459B00634264 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D05003DC1BEB459B00634264 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D05003951BEB2DC300634264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05003A91BEB2DC300634264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05003B41BEB2DC300634264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D050038F1BEB2DC300634264 = {
+			isa = PBXGroup;
+			children = (
+				D050039A1BEB2DC300634264 /* Toppano */,
+				D05003AF1BEB2DC300634264 /* ToppanoTests */,
+				D05003BA1BEB2DC300634264 /* ToppanoUITests */,
+				D05003991BEB2DC300634264 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D05003991BEB2DC300634264 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D05003981BEB2DC300634264 /* Toppano.app */,
+				D05003AC1BEB2DC300634264 /* ToppanoTests.xctest */,
+				D05003B71BEB2DC300634264 /* ToppanoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D050039A1BEB2DC300634264 /* Toppano */ = {
+			isa = PBXGroup;
+			children = (
+				D050039B1BEB2DC300634264 /* AppDelegate.swift */,
+				D05003DB1BEB459B00634264 /* HomeViewController.swift */,
+				D05003DC1BEB459B00634264 /* HomeViewController.xib */,
+				D05003D71BEB447900634264 /* MainViewController.swift */,
+				D05003D81BEB447900634264 /* MainViewController.xib */,
+				D050039F1BEB2DC300634264 /* Main.storyboard */,
+				D05003A21BEB2DC300634264 /* Assets.xcassets */,
+				D05003A41BEB2DC300634264 /* LaunchScreen.storyboard */,
+				D05003A71BEB2DC300634264 /* Info.plist */,
+			);
+			path = Toppano;
+			sourceTree = "<group>";
+		};
+		D05003AF1BEB2DC300634264 /* ToppanoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D05003B01BEB2DC300634264 /* ToppanoTests.swift */,
+				D05003B21BEB2DC300634264 /* Info.plist */,
+			);
+			path = ToppanoTests;
+			sourceTree = "<group>";
+		};
+		D05003BA1BEB2DC300634264 /* ToppanoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D05003BB1BEB2DC300634264 /* ToppanoUITests.swift */,
+				D05003BD1BEB2DC400634264 /* Info.plist */,
+			);
+			path = ToppanoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D05003971BEB2DC300634264 /* Toppano */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D05003C01BEB2DC400634264 /* Build configuration list for PBXNativeTarget "Toppano" */;
+			buildPhases = (
+				D05003941BEB2DC300634264 /* Sources */,
+				D05003951BEB2DC300634264 /* Frameworks */,
+				D05003961BEB2DC300634264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Toppano;
+			productName = Toppano;
+			productReference = D05003981BEB2DC300634264 /* Toppano.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D05003AB1BEB2DC300634264 /* ToppanoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D05003C31BEB2DC400634264 /* Build configuration list for PBXNativeTarget "ToppanoTests" */;
+			buildPhases = (
+				D05003A81BEB2DC300634264 /* Sources */,
+				D05003A91BEB2DC300634264 /* Frameworks */,
+				D05003AA1BEB2DC300634264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D05003AE1BEB2DC300634264 /* PBXTargetDependency */,
+			);
+			name = ToppanoTests;
+			productName = ToppanoTests;
+			productReference = D05003AC1BEB2DC300634264 /* ToppanoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D05003B61BEB2DC300634264 /* ToppanoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D05003C61BEB2DC400634264 /* Build configuration list for PBXNativeTarget "ToppanoUITests" */;
+			buildPhases = (
+				D05003B31BEB2DC300634264 /* Sources */,
+				D05003B41BEB2DC300634264 /* Frameworks */,
+				D05003B51BEB2DC300634264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D05003B91BEB2DC300634264 /* PBXTargetDependency */,
+			);
+			name = ToppanoUITests;
+			productName = ToppanoUITests;
+			productReference = D05003B71BEB2DC300634264 /* ToppanoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D05003901BEB2DC300634264 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = papayabird;
+				TargetAttributes = {
+					D05003971BEB2DC300634264 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					D05003AB1BEB2DC300634264 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = D05003971BEB2DC300634264;
+					};
+					D05003B61BEB2DC300634264 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = D05003971BEB2DC300634264;
+					};
+				};
+			};
+			buildConfigurationList = D05003931BEB2DC300634264 /* Build configuration list for PBXProject "Toppano" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D050038F1BEB2DC300634264;
+			productRefGroup = D05003991BEB2DC300634264 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D05003971BEB2DC300634264 /* Toppano */,
+				D05003AB1BEB2DC300634264 /* ToppanoTests */,
+				D05003B61BEB2DC300634264 /* ToppanoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D05003961BEB2DC300634264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05003A61BEB2DC300634264 /* LaunchScreen.storyboard in Resources */,
+				D05003A31BEB2DC300634264 /* Assets.xcassets in Resources */,
+				D05003DE1BEB459B00634264 /* HomeViewController.xib in Resources */,
+				D05003DA1BEB447900634264 /* MainViewController.xib in Resources */,
+				D05003A11BEB2DC300634264 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05003AA1BEB2DC300634264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05003B51BEB2DC300634264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D05003941BEB2DC300634264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05003D91BEB447900634264 /* MainViewController.swift in Sources */,
+				D050039C1BEB2DC300634264 /* AppDelegate.swift in Sources */,
+				D05003DD1BEB459B00634264 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05003A81BEB2DC300634264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05003B11BEB2DC300634264 /* ToppanoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05003B31BEB2DC300634264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05003BC1BEB2DC300634264 /* ToppanoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D05003AE1BEB2DC300634264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D05003971BEB2DC300634264 /* Toppano */;
+			targetProxy = D05003AD1BEB2DC300634264 /* PBXContainerItemProxy */;
+		};
+		D05003B91BEB2DC300634264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D05003971BEB2DC300634264 /* Toppano */;
+			targetProxy = D05003B81BEB2DC300634264 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D050039F1BEB2DC300634264 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D05003A01BEB2DC300634264 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D05003A41BEB2DC300634264 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D05003A51BEB2DC300634264 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D05003BE1BEB2DC400634264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D05003BF1BEB2DC400634264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D05003C11BEB2DC400634264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Toppano/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = papayabird.Toppano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D05003C21BEB2DC400634264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Toppano/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = papayabird.Toppano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D05003C41BEB2DC400634264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ToppanoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = papayabird.ToppanoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toppano.app/Toppano";
+			};
+			name = Debug;
+		};
+		D05003C51BEB2DC400634264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ToppanoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = papayabird.ToppanoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toppano.app/Toppano";
+			};
+			name = Release;
+		};
+		D05003C71BEB2DC400634264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ToppanoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = papayabird.ToppanoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Toppano;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D05003C81BEB2DC400634264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ToppanoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = papayabird.ToppanoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Toppano;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D05003931BEB2DC300634264 /* Build configuration list for PBXProject "Toppano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05003BE1BEB2DC400634264 /* Debug */,
+				D05003BF1BEB2DC400634264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D05003C01BEB2DC400634264 /* Build configuration list for PBXNativeTarget "Toppano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05003C11BEB2DC400634264 /* Debug */,
+				D05003C21BEB2DC400634264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D05003C31BEB2DC400634264 /* Build configuration list for PBXNativeTarget "ToppanoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05003C41BEB2DC400634264 /* Debug */,
+				D05003C51BEB2DC400634264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D05003C61BEB2DC400634264 /* Build configuration list for PBXNativeTarget "ToppanoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05003C71BEB2DC400634264 /* Debug */,
+				D05003C81BEB2DC400634264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D05003901BEB2DC300634264 /* Project object */;
+}
