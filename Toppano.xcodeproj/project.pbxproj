@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11AAF7867A6346F32549D746 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF51E3F72C355403D6613D7 /* Pods.framework */; };
 		D050039C1BEB2DC300634264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D050039B1BEB2DC300634264 /* AppDelegate.swift */; };
 		D05003A11BEB2DC300634264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D050039F1BEB2DC300634264 /* Main.storyboard */; };
 		D05003A31BEB2DC300634264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05003A21BEB2DC300634264 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BCD6381D8F35A9F9C3FED709 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D05003981BEB2DC300634264 /* Toppano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toppano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D050039B1BEB2DC300634264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D05003A01BEB2DC300634264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		D05003D81BEB447900634264 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		D05003DB1BEB459B00634264 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D05003DC1BEB459B00634264 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		E8800CD5B82D50D425B98410 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FCF51E3F72C355403D6613D7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AAF7867A6346F32549D746 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28F637B534813B7FBBCCB40F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCF51E3F72C355403D6613D7 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4614DF85423B203BB0E6C003 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8800CD5B82D50D425B98410 /* Pods.debug.xcconfig */,
+				BCD6381D8F35A9F9C3FED709 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D050038F1BEB2DC300634264 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +109,8 @@
 				D05003AF1BEB2DC300634264 /* ToppanoTests */,
 				D05003BA1BEB2DC300634264 /* ToppanoUITests */,
 				D05003991BEB2DC300634264 /* Products */,
+				4614DF85423B203BB0E6C003 /* Pods */,
+				28F637B534813B7FBBCCB40F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D05003C01BEB2DC400634264 /* Build configuration list for PBXNativeTarget "Toppano" */;
 			buildPhases = (
+				3A4F4EFCA68ACB19406DC714 /* Check Pods Manifest.lock */,
 				D05003941BEB2DC300634264 /* Sources */,
 				D05003951BEB2DC300634264 /* Frameworks */,
 				D05003961BEB2DC300634264 /* Resources */,
+				025FC990D59FAF046B9EEDE0 /* Embed Pods Frameworks */,
+				307321A10DAAF505ED930049 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +288,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		025FC990D59FAF046B9EEDE0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		307321A10DAAF505ED930049 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A4F4EFCA68ACB19406DC714 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D05003941BEB2DC300634264 /* Sources */ = {
@@ -409,6 +484,7 @@
 		};
 		D05003C11BEB2DC400634264 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8800CD5B82D50D425B98410 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Toppano/Info.plist;
@@ -420,6 +496,7 @@
 		};
 		D05003C21BEB2DC400634264 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD6381D8F35A9F9C3FED709 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Toppano/Info.plist;
@@ -496,6 +573,7 @@
 				D05003C21BEB2DC400634264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D05003C31BEB2DC400634264 /* Build configuration list for PBXNativeTarget "ToppanoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +582,7 @@
 				D05003C51BEB2DC400634264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D05003C61BEB2DC400634264 /* Build configuration list for PBXNativeTarget "ToppanoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +591,7 @@
 				D05003C81BEB2DC400634264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFA-VK-Zty">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFA-VK-Zty">
                     <rect key="frame" x="277" y="285" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                     <connections>
@@ -24,6 +24,12 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gFA-VK-Zty" secondAttribute="bottom" constant="285" id="rI2-Ih-oT0"/>
+                <constraint firstItem="gFA-VK-Zty" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="285" id="ttG-fo-UnJ"/>
+                <constraint firstItem="gFA-VK-Zty" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="277" id="ymz-wP-vg1"/>
+                <constraint firstAttribute="trailing" secondItem="gFA-VK-Zty" secondAttribute="trailing" constant="277" id="zV9-1Q-4L3"/>
+            </constraints>
         </view>
     </objects>
 </document>

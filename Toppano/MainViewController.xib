@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZT-hL-51j">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZT-hL-51j">
                     <rect key="frame" x="277" y="285" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                     <connections>
@@ -24,6 +24,12 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zZT-hL-51j" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="277" id="1Pk-8o-Dxx"/>
+                <constraint firstAttribute="bottom" secondItem="zZT-hL-51j" secondAttribute="bottom" constant="285" id="EpQ-Wz-f6f"/>
+                <constraint firstAttribute="trailing" secondItem="zZT-hL-51j" secondAttribute="trailing" constant="277" id="JMY-Db-Hgo"/>
+                <constraint firstItem="zZT-hL-51j" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="285" id="ZHs-tK-kKc"/>
+            </constraints>
         </view>
     </objects>
 </document>
