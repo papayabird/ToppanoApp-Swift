@@ -1,19 +1,23 @@
 //
-//  MainViewController.swift
+//  TPHomeViewController.swift
 //  Toppano
 //
-//  Created by papayabird on 2015/11/5.
+//  Created by papayabird on 2015/11/6.
 //  Copyright © 2015年 papayabird. All rights reserved.
 //
 
 import UIKit
 
-class MainViewController: UIViewController {
+class TPHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let network = TPNetworkAPI();
+        
+        network.loginWith("1", name: "1", birthday: "", emails: "", bio: "", location: "")
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,10 +26,6 @@ class MainViewController: UIViewController {
     }
     
 
-    @IBAction func backAction(sender: AnyObject)
-    {
-        self.navigationController!.popViewControllerAnimated(true);
-    }
     /*
     // MARK: - Navigation
 

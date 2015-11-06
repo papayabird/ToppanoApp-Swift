@@ -1,19 +1,27 @@
 //
-//  HomeViewController.swift
+//  TPLoginViewController.swift
 //  Toppano
 //
-//  Created by papayabird on 2015/11/5.
+//  Created by papayabird on 2015/11/6.
 //  Copyright © 2015年 papayabird. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class TPLoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let homeVC = TPHomeViewController(nibName:"TPHomeViewController",bundle:nil);
+        
+        self.navigationController!.pushViewController(homeVC, animated: true);
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,11 +30,6 @@ class HomeViewController: UIViewController {
     }
     
 
-    @IBAction func Action(sender: AnyObject) {
-        
-        let mainVC = MainViewController(nibName:"MainViewController",bundle:nil);
-        self.navigationController!.pushViewController(mainVC, animated: true);
-    }
     /*
     // MARK: - Navigation
 

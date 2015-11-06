@@ -14,10 +14,11 @@
 		D05003A61BEB2DC300634264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05003A41BEB2DC300634264 /* LaunchScreen.storyboard */; };
 		D05003B11BEB2DC300634264 /* ToppanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05003B01BEB2DC300634264 /* ToppanoTests.swift */; };
 		D05003BC1BEB2DC300634264 /* ToppanoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05003BB1BEB2DC300634264 /* ToppanoUITests.swift */; };
-		D05003D91BEB447900634264 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05003D71BEB447900634264 /* MainViewController.swift */; };
-		D05003DA1BEB447900634264 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05003D81BEB447900634264 /* MainViewController.xib */; };
-		D05003DD1BEB459B00634264 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05003DB1BEB459B00634264 /* HomeViewController.swift */; };
-		D05003DE1BEB459B00634264 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05003DC1BEB459B00634264 /* HomeViewController.xib */; };
+		D0C466A51BEC64D700686428 /* TPNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C466A41BEC64D700686428 /* TPNetworkAPI.swift */; };
+		D0C466A81BEC64EC00686428 /* TPLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C466A61BEC64EC00686428 /* TPLoginViewController.swift */; };
+		D0C466A91BEC64EC00686428 /* TPLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C466A71BEC64EC00686428 /* TPLoginViewController.xib */; };
+		D0C466AC1BEC651D00686428 /* TPHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C466AA1BEC651D00686428 /* TPHomeViewController.swift */; };
+		D0C466AD1BEC651D00686428 /* TPHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C466AB1BEC651D00686428 /* TPHomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +52,11 @@
 		D05003B71BEB2DC300634264 /* ToppanoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToppanoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05003BB1BEB2DC300634264 /* ToppanoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppanoUITests.swift; sourceTree = "<group>"; };
 		D05003BD1BEB2DC400634264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D05003D71BEB447900634264 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		D05003D81BEB447900634264 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		D05003DB1BEB459B00634264 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		D05003DC1BEB459B00634264 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		D0C466A41BEC64D700686428 /* TPNetworkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPNetworkAPI.swift; sourceTree = "<group>"; };
+		D0C466A61BEC64EC00686428 /* TPLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPLoginViewController.swift; sourceTree = "<group>"; };
+		D0C466A71BEC64EC00686428 /* TPLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPLoginViewController.xib; sourceTree = "<group>"; };
+		D0C466AA1BEC651D00686428 /* TPHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPHomeViewController.swift; sourceTree = "<group>"; };
+		D0C466AB1BEC651D00686428 /* TPHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPHomeViewController.xib; sourceTree = "<group>"; };
 		E8800CD5B82D50D425B98410 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FCF51E3F72C355403D6613D7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -128,10 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				D050039B1BEB2DC300634264 /* AppDelegate.swift */,
-				D05003DB1BEB459B00634264 /* HomeViewController.swift */,
-				D05003DC1BEB459B00634264 /* HomeViewController.xib */,
-				D05003D71BEB447900634264 /* MainViewController.swift */,
-				D05003D81BEB447900634264 /* MainViewController.xib */,
+				D0C466A41BEC64D700686428 /* TPNetworkAPI.swift */,
+				D0C4669B1BEC648400686428 /* ViewController */,
 				D050039F1BEB2DC300634264 /* Main.storyboard */,
 				D05003A21BEB2DC300634264 /* Assets.xcassets */,
 				D05003A41BEB2DC300634264 /* LaunchScreen.storyboard */,
@@ -156,6 +156,17 @@
 				D05003BD1BEB2DC400634264 /* Info.plist */,
 			);
 			path = ToppanoUITests;
+			sourceTree = "<group>";
+		};
+		D0C4669B1BEC648400686428 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D0C466A61BEC64EC00686428 /* TPLoginViewController.swift */,
+				D0C466A71BEC64EC00686428 /* TPLoginViewController.xib */,
+				D0C466AA1BEC651D00686428 /* TPHomeViewController.swift */,
+				D0C466AB1BEC651D00686428 /* TPHomeViewController.xib */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +234,7 @@
 		D05003901BEB2DC300634264 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TP;
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = papayabird;
@@ -265,10 +277,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C466A91BEC64EC00686428 /* TPLoginViewController.xib in Resources */,
 				D05003A61BEB2DC300634264 /* LaunchScreen.storyboard in Resources */,
 				D05003A31BEB2DC300634264 /* Assets.xcassets in Resources */,
-				D05003DE1BEB459B00634264 /* HomeViewController.xib in Resources */,
-				D05003DA1BEB447900634264 /* MainViewController.xib in Resources */,
+				D0C466AD1BEC651D00686428 /* TPHomeViewController.xib in Resources */,
 				D05003A11BEB2DC300634264 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,9 +354,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D05003D91BEB447900634264 /* MainViewController.swift in Sources */,
+				D0C466A51BEC64D700686428 /* TPNetworkAPI.swift in Sources */,
+				D0C466AC1BEC651D00686428 /* TPHomeViewController.swift in Sources */,
 				D050039C1BEB2DC300634264 /* AppDelegate.swift in Sources */,
-				D05003DD1BEB459B00634264 /* HomeViewController.swift in Sources */,
+				D0C466A81BEC64EC00686428 /* TPLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

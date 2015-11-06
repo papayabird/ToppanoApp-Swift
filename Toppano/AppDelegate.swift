@@ -19,9 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window! = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        let homeVC = HomeViewController(nibName:"HomeViewController",bundle:nil);
+        let loginVC = TPLoginViewController(nibName:"TPLoginViewController",bundle:nil);
 
-        let navigation = UINavigationController(rootViewController:homeVC)
+        let navigation = UINavigationController(rootViewController:loginVC)
         navigation.navigationBar.hidden = true;
         
         // 指定 root view controller
