@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,19 +20,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window! = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        let loginVC = TPLoginViewController(nibName:"TPLoginViewController",bundle:nil);
-
-        let navigation = UINavigationController(rootViewController:loginVC)
-        navigation.navigationBar.hidden = true;
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
-        // 指定 root view controller
-        self.window!.rootViewController = navigation;
+        self.settingRootViewController()
         
         // 把 window 顯示出來
         self.window!.makeKeyAndVisible()
         
-        
         return true
+    }
+    
+    func settingRootViewController() {
+        
+        if (FBSDKAccessToken.currentAccessToken() != nil) {
+            
+            let loginVC = TPLoginViewController(nibName:"TPLoginViewController",bundle:nil);
+            let homeVC = TPHomeViewController(nibName:"TPHomeViewController",bundle:nil);
+            
+            let navigation = UINavigationController()
+            navigation.viewControllers = [loginVC,homeVC]
+            navigation.navigationBar.hidden = true;
+
+            // 指定 root view controller
+            self.window!.rootViewController = navigation;
+            
+        }
+        else {
+            let loginVC = TPLoginViewController(nibName:"TPLoginViewController",bundle:nil);
+
+            let navigation = UINavigationController()
+            navigation.viewControllers = [loginVC]
+            navigation.navigationBar.hidden = true;
+            
+            // 指定 root view controller
+            self.window!.rootViewController = navigation;
+        }
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -50,6 +78,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillTerminate(application: UIApplication) {

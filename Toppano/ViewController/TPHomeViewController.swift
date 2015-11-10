@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FBSDKLoginKit
 class TPHomeViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -15,9 +15,27 @@ class TPHomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let network = TPNetworkAPI();
         
-        network.loginWith("1", name: "1", birthday: "", emails: "", bio: "", location: "")
+        let graphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
+        graphRequest.startWithCompletionHandler { (connection : FBSDKGraphRequestConnection!, result : AnyObject!, error : NSError!) -> Void in
+            
+            if error == nil {
+                
+                print("Friends are : \(result)")
+                
+                var dict = result as! NSDictionary
+                
+                let network = TPNetworkAPI()
+//                network.loginWith(dict.objectForKey("id"), name: "", birthday: "", emails: "", bio: "", location: "")
+                
+            } else {
+                
+                print("Error Getting Friends \(error)");
+                
+            }
+        }
+
+    
     }
 
     override func didReceiveMemoryWarning() {

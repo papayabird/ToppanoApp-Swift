@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 
+
 class TPNetworkAPI: NSObject {
 
     
