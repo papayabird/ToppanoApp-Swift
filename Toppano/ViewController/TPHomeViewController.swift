@@ -23,10 +23,18 @@ class TPHomeViewController: UIViewController {
                 
                 print("Friends are : \(result)")
                 
-                var dict = result as! NSDictionary
+                if result is [String : AnyObject] {
+                    
+                    let resultdict = result as! NSDictionary
+                 
+
+                }
+                else {
+                    
+                }
                 
-                let network = TPNetworkAPI()
-//                network.loginWith(dict.objectForKey("id"), name: "", birthday: "", emails: "", bio: "", location: "")
+                
+
                 
             } else {
                 

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		11AAF7867A6346F32549D746 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF51E3F72C355403D6613D7 /* Pods.framework */; };
+		D02AD3051BF201FD00989159 /* TPMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AD3031BF201FD00989159 /* TPMainViewController.swift */; };
+		D02AD3061BF201FD00989159 /* TPMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02AD3041BF201FD00989159 /* TPMainViewController.xib */; };
+		D02AD3091BF2022800989159 /* TPSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AD3071BF2022800989159 /* TPSceneViewController.swift */; };
+		D02AD30A1BF2022800989159 /* TPSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02AD3081BF2022800989159 /* TPSceneViewController.xib */; };
+		D02AD30E1BF2026400989159 /* TPGLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AD30C1BF2026400989159 /* TPGLKViewController.swift */; };
+		D02AD30F1BF2026400989159 /* TPGLKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02AD30D1BF2026400989159 /* TPGLKViewController.xib */; };
 		D050039C1BEB2DC300634264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D050039B1BEB2DC300634264 /* AppDelegate.swift */; };
 		D05003A11BEB2DC300634264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D050039F1BEB2DC300634264 /* Main.storyboard */; };
 		D05003A31BEB2DC300634264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05003A21BEB2DC300634264 /* Assets.xcassets */; };
@@ -40,6 +46,12 @@
 
 /* Begin PBXFileReference section */
 		BCD6381D8F35A9F9C3FED709 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D02AD3031BF201FD00989159 /* TPMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPMainViewController.swift; sourceTree = "<group>"; };
+		D02AD3041BF201FD00989159 /* TPMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPMainViewController.xib; sourceTree = "<group>"; };
+		D02AD3071BF2022800989159 /* TPSceneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPSceneViewController.swift; sourceTree = "<group>"; };
+		D02AD3081BF2022800989159 /* TPSceneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPSceneViewController.xib; sourceTree = "<group>"; };
+		D02AD30C1BF2026400989159 /* TPGLKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPGLKViewController.swift; sourceTree = "<group>"; };
+		D02AD30D1BF2026400989159 /* TPGLKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPGLKViewController.xib; sourceTree = "<group>"; };
 		D05003981BEB2DC300634264 /* Toppano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toppano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D050039B1BEB2DC300634264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D05003A01BEB2DC300634264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,6 +116,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D02AD30B1BF2023600989159 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				D02AD30C1BF2026400989159 /* TPGLKViewController.swift */,
+				D02AD30D1BF2026400989159 /* TPGLKViewController.xib */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
 		D050038F1BEB2DC300634264 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +153,7 @@
 				D050039B1BEB2DC300634264 /* AppDelegate.swift */,
 				D0C466A41BEC64D700686428 /* TPNetworkAPI.swift */,
 				D0C4669B1BEC648400686428 /* ViewController */,
+				D02AD30B1BF2023600989159 /* GL */,
 				D050039F1BEB2DC300634264 /* Main.storyboard */,
 				D05003A21BEB2DC300634264 /* Assets.xcassets */,
 				D05003A41BEB2DC300634264 /* LaunchScreen.storyboard */,
@@ -165,6 +187,10 @@
 				D0C466A71BEC64EC00686428 /* TPLoginViewController.xib */,
 				D0C466AA1BEC651D00686428 /* TPHomeViewController.swift */,
 				D0C466AB1BEC651D00686428 /* TPHomeViewController.xib */,
+				D02AD3031BF201FD00989159 /* TPMainViewController.swift */,
+				D02AD3041BF201FD00989159 /* TPMainViewController.xib */,
+				D02AD3071BF2022800989159 /* TPSceneViewController.swift */,
+				D02AD3081BF2022800989159 /* TPSceneViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -278,10 +304,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0C466A91BEC64EC00686428 /* TPLoginViewController.xib in Resources */,
+				D02AD30F1BF2026400989159 /* TPGLKViewController.xib in Resources */,
 				D05003A61BEB2DC300634264 /* LaunchScreen.storyboard in Resources */,
 				D05003A31BEB2DC300634264 /* Assets.xcassets in Resources */,
+				D02AD30A1BF2022800989159 /* TPSceneViewController.xib in Resources */,
 				D0C466AD1BEC651D00686428 /* TPHomeViewController.xib in Resources */,
 				D05003A11BEB2DC300634264 /* Main.storyboard in Resources */,
+				D02AD3061BF201FD00989159 /* TPMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +385,9 @@
 			files = (
 				D0C466A51BEC64D700686428 /* TPNetworkAPI.swift in Sources */,
 				D0C466AC1BEC651D00686428 /* TPHomeViewController.swift in Sources */,
+				D02AD3051BF201FD00989159 /* TPMainViewController.swift in Sources */,
+				D02AD3091BF2022800989159 /* TPSceneViewController.swift in Sources */,
+				D02AD30E1BF2026400989159 /* TPGLKViewController.swift in Sources */,
 				D050039C1BEB2DC300634264 /* AppDelegate.swift in Sources */,
 				D0C466A81BEC64EC00686428 /* TPLoginViewController.swift in Sources */,
 			);
