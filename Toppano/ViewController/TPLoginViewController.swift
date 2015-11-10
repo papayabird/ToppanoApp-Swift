@@ -19,9 +19,12 @@ class TPLoginViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        
+        /*
         let homeVC = TPHomeViewController(nibName:"TPHomeViewController",bundle:nil);
         
         self.navigationController!.pushViewController(homeVC, animated: true);
+        */
     }
 
     override func didReceiveMemoryWarning() {
